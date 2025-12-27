@@ -61,7 +61,7 @@ jobs:
         run: |
           python - << 'EOF'
           import json
-          threshold = ${{ vars.F1_GATE_THRESHOLD }}
+          threshold = float("${{ vars.F1_GATE_THRESHOLD }}")
           with open("reports/metrics.json", "r", encoding="utf-8") as f:
               metrics = json.load(f)
           f1 = float(metrics.get("f1", 0.0))
