@@ -104,7 +104,7 @@ jobs:
           echo "=== Phase CD (simulée) ==="
           echo "ENV               : ${{ vars.APP_ENV }}"
           echo "F1 gate           : ${{ vars.F1_GATE_THRESHOLD }}"
-          echo "Secret (demo)     : ${{ secrets.DEMO_SECRET }}"
+          echo "Secret (demo)     : ${{ vars.MLOPSLAB }}"
           echo
           echo "Artefacts prêts :"
           ls -R release_artifacts
